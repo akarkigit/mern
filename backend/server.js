@@ -25,9 +25,9 @@ app.use('/api/workouts', workoutRoutes)
 mongoose.connect(process.env.MONGO_UI)
 .then(() => {
     // listen for request once connected to mongo
-app.listen(process.env.PORT, () => {
-    console.log('Mongodb connected! Listening on port ', process.env.PORT)
-})
+    app.listen(process.env.PORT, () => {
+        console.log('Mongodb connected! Listening on port ', process.env.PORT)
+    })
 })
 .catch(() => {
     console.log(error)
