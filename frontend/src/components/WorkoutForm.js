@@ -30,7 +30,7 @@ const WorkoutForm = () => {
             setLoad('')
             setReps('')
             setError(null)
-            console.log('New workout Added')
+            console.log('New workout Added', json)
         }
     }
 
